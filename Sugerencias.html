@@ -2,12 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            MenuVerseU
+            Contacto
         </title>
-        <link rel="stylesheet" type="text/css" href="css/INDEX.css">
+        <link rel="stylesheet" type="text/css" href="css/Sugerencias.css">
         <link rel="icon" href="IMAG/MenuVerseU_Logo.jpeg">
     </head>
     <body>
@@ -37,28 +35,37 @@
             </div>
         </header>
         <script type="text/javascript"  src="Menu.js"></script>
-        <main>
-                <br></br>
-                <div class="Bienve">
-                <table>
-                    <tr>
-                        
-                        <td>
-                            <h1>Bienvenido MenuVerseU</h1>
-                    <br>
-                    <p>
-                        MenuVerseU es una pagina que quiere facilitar la vida de los estudiantes universitarios al proporcionar 
-                        informacion actualizada y accesible sobre los menus contando con comidas, bebidas, combos, entre otras cosas que 
-                        las cafeterias preparan, las cafeterias que se encontraran en esta pagina seran las que se encuentran dentro  
-                        de ciudad universitaria. 
-                    </p>
-                        </td>
-                        <td><img class="imagelo" src="IMAG/MenuVerseU_Logo.jpeg"></img></td>
-                    </tr> 
-                </table>
-                </div>
-                <br><br>
-                <br><br>
+        <body class="Tot">
+            <br>
+            <br>
+            <br>
+            <h2>Contactenos</h2>
+            <br>
+            <div class="FormularioY" id="wrapper">
+                <br>
+                <br>
+                <br>
+                <br>
+                <form action="correo.php" method="POST">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="name" id="name" required> 
+
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="subject">Asunto</label>
+                    <input type="text" name="asunto" id="subject" required>
+
+                    <label for="comments">Comentarios</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+
+                    <input class="btn" type="submit" value="Enviar">
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+            <main>
                 <footer class="pie-pagina">
                     <div class="grupo1">
                         <div class="box">
@@ -78,7 +85,7 @@
                         <small>&copy; 2023 <b>MenuVerseU</b> - Todos los Derechos Reservados.</small>
                     </div>
                 </footer>
-        </main>     
+            </main>
+        </body>
     </body>
-    <script src="script.js"></script>
 </html>
